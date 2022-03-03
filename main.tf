@@ -94,6 +94,7 @@ resource "aws_security_group" "sg-myapp" {
 
 }
 
+# Creating Subnet
 resource "aws_subnet" "subnet-myapp" {
   vpc_id                  = aws_vpc.mydefvpc.id
   cidr_block             = var.subnet_cidr
